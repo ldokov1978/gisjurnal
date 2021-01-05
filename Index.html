@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Журнал учёта заявок</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="logo"></div>
+				<h1>Журнал учёта заявок отдела геоинформационных систем</h1>
+			</header>
+			<form id="frmJournal">
+				<div class="content-grid">
+					<div class="main-grid">
+						<!-- ======================================================== -->
+						<label for="dateBegin">Дата начала работ</label>
+						<input id="dateBegin" name="dateBegin" type="date" form="frmJournal">
+						<!-- ======================================================== -->
+						<label for="dateEnd">Дата окончания работ</label>
+						<input id="dateEnd" name="dateEnd" type="date" form="frmJournal">
+						<!-- ======================================================== -->
+						<p>Наличие заявки</p>
+						<div class="check-wrapper">
+							<input id="requestCheck" name="requestCheck" type="checkbox" checked form="frmJournal">
+							<label for="requestCheck"></label>
+						</div>
+						<!-- ======================================================== -->
+						<label for="appType">Тип заявителя</label>
+						<select id="appType" name="appType" form="frmJournal">
+							<option value="Орган государственной власти">Орган государственной власти</option>
+							<option value="Организация">Организация</option>
+							<option value="Частное лицо">Частное лицо</option>				
+						</select>
+						<!-- ======================================================== -->
+						<label for="appName">Наименование заявителя</label>
+						<select id="appName" name="appName" form="frmJournal">
+							<option value="Наименование заявителя-1">Наименование заявителя-1</option>
+							<option value="Наименование заявителя-2">Наименование заявителя-2</option>
+							<option value="Наименование заявителя-3">Наименование заявителя-3</option>
+							<option value="Наименование заявителя-4">Наименование заявителя-4</option>
+							<option value="Наименование заявителя-5">Наименование заявителя-5</option>
+							<option value="Добавить наименование заявителя">Добавить наименование заявителя</option>
+						</select>
+						<!-- ======================================================== -->
+						<p>Сканирование</p>
+						<div class="check-wrapper">
+							<input id="scanCheck" name="scanCheck" type="checkbox" form="frmJournal">
+							<label for="scanCheck"></label>
+						</div>
+						<!-- ======================================================== -->
+						<p>Печать</p>
+						<div class="check-wrapper">
+							<input id="printCheck" name="printCheck" type="checkbox" form="frmJournal">
+							<label for="printCheck"></label>
+						</div>
+						<!-- ======================================================== -->
+						<p>Ламинирование</p>
+						<div class="check-wrapper">
+							<input id="lamCheck" name="lamCheck" type="checkbox" form="frmJournal">
+							<label for="lamCheck"></label>
+						</div>
+						<!-- ======================================================== -->
+						<label for="execWork">Выполненные работы</label>
+						<textarea id="execWork" name="execWork" form="frmJournal"></textarea>
+						<!-- ======================================================== -->
+					</div>
+
+					<div class="main-grid">
+						<!-- ======================================================== -->
+						<label for="workFormat">Формат</label>
+						<select id="workFormat" name="workFormat" form="frmJournal">
+							<option value="Стандартный">Стандартный</option>
+							<option value="Нестандартный">Нестандартный</option>
+							<option value="Электронный вид">Электронный вид</option>
+						</select>
+						<!-- ======================================================== -->
+						<label for="stdFormat">Стандартный формат</label>
+						<select id="stdFormat" name="stdFormat" form="frmJournal">
+							<option value="А0">А0</option>
+							<option value="А1">А1</option>
+							<option value="А2">А2</option>
+							<option value="А3">А3</option>
+							<option value="А4">А4</option>
+							<option value="А5">А5</option>
+							<option value="А6">А6</option>	
+						</select>
+						<!-- ======================================================== -->
+						<label for="notStdHeight">Высота (мм)</label>
+						<input id="notStdHeight" name="notStdHeight" type="number" min= "0" readonly form="frmJournal">
+						<!-- ======================================================== -->
+						<label for="notStdWidth">Ширина (мм)</label>
+						<input id="notStdWidth" name="notStdWidth" type="number" min= "0" readonly form="frmJournal">
+						<!-- ======================================================== -->
+						<label for="countWork">Количество</label>
+						<input id="countWork" name="countWork" type="number" min= "1" value="1" form="frmJournal">
+						<!-- ======================================================== -->
+						<label for="squareWork">Общая площадь (м<sup>2</sup>)</label>
+						<input id="squareWork" name="squareWork" type="text" readonly form="frmJournal">
+						<!-- ======================================================== -->
+						<label for="execWork_1">Исполнитель 1</label>
+						<select id="execWork_1" name="execWork_1" form="frmJournal">
+							<option value="---">---</option>
+							<option value="Козыренко В. М.">Козыренко В. М.</option>
+							<option value="Льдоков Д. В.">Льдоков Д. В.</option>
+							<option value="Парсуков А. Е.">Парсуков А. Е.</option>
+							<option value="Семяшкина А. С.">Семяшкина А. С.</option>
+						</select>
+						<!-- ======================================================== -->
+						<label for="execWork_2">Исполнитель 2</label>
+						<select id="execWork_2" name="execWork_2" form="frmJournal">
+							<option value="---">---</option>
+							<option value="Козыренко В. М.">Козыренко В. М.</option>
+							<option value="Льдоков Д. В.">Льдоков Д. В.</option>
+							<option value="Парсуков А. Е.">Парсуков А. Е.</option>
+							<option value="Семяшкина А. С.">Семяшкина А. С.</option>
+						</select>
+						<!-- ======================================================== -->
+						<label for="execWork_3">Исполнитель 3</label>
+						<select id="execWork_3" name="execWork_3" form="frmJournal">
+							<option value="---">---</option>
+							<option value="Козыренко В. М.">Козыренко В. М.</option>
+							<option value="Льдоков Д. В.">Льдоков Д. В.</option>
+							<option value="Парсуков А. Е.">Парсуков А. Е.</option>
+							<option value="Семяшкина А. С.">Семяшкина А. С.</option>
+						</select>
+						<!-- ======================================================== -->
+						<label for="execWork_4">Исполнитель 4</label>
+						<select id="execWork_4" name="execWork_4" form="frmJournal">
+							<option value="---">---</option>
+							<option value="Козыренко В. М.">Козыренко В. М.</option>
+							<option value="Льдоков Д. В.">Льдоков Д. В.</option>
+							<option value="Парсуков А. Е.">Парсуков А. Е.</option>
+							<option value="Семяшкина А. С.">Семяшкина А. С.</option>
+						</select>
+						<!-- ======================================================== -->
+					</div>
+				</div>
+				<div class="recordControl">
+					<input id="firstRecord" name="firstRecord" type="button" value=" " title="Первая запись" form="frmJournal">
+					<input id="prevRecord" name="prevRecord" type="button" value=" " title="Предыдущая запись" form="frmJournal">
+					<input id="editRecord" name="editRecord" type="button" value="Редактировать" title="Редактировать" form="frmJournal">
+					<input id="nextRecord" name="nextRecord" type="button" value=" " title="Следующая запись" form="frmJournal">
+					<input id="lastRecord" name="lastRecord" type="button" value=" " title="Последняя запись" form="frmJournal">
+					<input id="saveRecord" name="saveRecord" type="button" value="Сохранить" title="Сохранить" form="frmJournal">
+					<input id="createReport" name="createReport" type="button" value="Отчёт" title="Отчёт" form="frmJournal">
+				</div>
+			</form>
+		</div>
+		<script src="js/script.js"></script>
+	</body>	
+</html>
